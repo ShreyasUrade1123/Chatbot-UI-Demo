@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer components {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .sidebar-mask {
+    mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  }
+}
+
+html,
+body {
+  background-color: black;
+  color: #ececec;
+}
